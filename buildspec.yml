@@ -7,8 +7,8 @@ phases:
   pre_build:
     commands:
       - echo installing maven...
-      - apt-get update -y
-      - apt-get install -y maven
+      - sudo apt-get update -y
+      - sudo apt-get install -y maven
   build:
     commands:
       - echo Build started on `date`
