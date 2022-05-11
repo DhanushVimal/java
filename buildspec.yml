@@ -1,5 +1,9 @@
 version: 0.2
-
+env:
+  variables:
+   parameter-store:
+      Username: Arti_usr
+      Pwd: Arti_pwd
 phases:
   install:
     runtime-versions:
