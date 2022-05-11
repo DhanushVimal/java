@@ -1,6 +1,7 @@
 version: 0.2
 env:
   variables:
+   ARTIFACTORY_TOKEN : "${ARTIFACTORY_TOKEN} 
    parameter-store:
       Username: Arti_usr
       Pwd: Arti_pwd
@@ -21,6 +22,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - 
 artifacts:
   files:
     - target/main-0.0.1-SNAPSHOT.jar
